@@ -1,8 +1,11 @@
 {
   "name": "esm2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "license": "MIT-0",
+  "repository": {
+    "url": "git@github.com:proteriax/esm2.git"
+  },
   "scripts": {
     "build": "rollup -c"
   },
