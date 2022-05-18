@@ -2,7 +2,7 @@
   "name": "esm-hook",
   "version": "0.1.2",
   "main": "register.js",
-  "license": "MIT-0",
+  "license": "MIT",
   "repository": {
     "url": "git@github.com:proteriax/esm-hook.git"
   },

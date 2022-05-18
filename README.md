@@ -1,6 +1,6 @@
 # esm-hook
 
-[![License](https://img.shields.io/badge/License-MIT_0-blue.svg)](https://opensource.org/licenses/MIT-0)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/esm-hook.svg)](https://badge.fury.io/js/esm-hook)
 
 Use ESM modules with zero setup.
@@ -17,4 +17,4 @@ fetch("https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty")
 
 ## License
 
-MIT No Attribution.
+MIT

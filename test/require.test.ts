@@ -11,7 +11,7 @@ describe("require", () => {
   });
 
   it("should require node-fetch", () => {
-    const unregister = require("../register");
+    const unregister = require("..");
     assert.doesNotThrow(() => {
       const fetch = require("node-fetch");
       assert.equal(typeof fetch, "object");

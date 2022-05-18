@@ -20,7 +20,7 @@ export function register(options?: TransformOptions) {
     ...options,
   };
 
-  function esbuild(module: any, filename: string) {
+  function esbuild(module: _Module, filename: string) {
     const source = fs.readFileSync(filename, "utf-8");
     const result = transformSync(source, transformOptions).code;
     return module._compile(result, filename);
