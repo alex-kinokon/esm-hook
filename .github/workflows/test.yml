@@ -4,15 +4,23 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 16, 18]
+
     steps:
       - uses: actions/checkout@v3
 
-      - name: yarn cache
-        uses: c-hive/gha-yarn-cache@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.0.0
 
-      - run: yarn install
+      - name: Install Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
 
-      - name: Build
-        run: yarn build
-
-      - run: yarn test
+      - run: pnpm install
+      - run: pnpm run build
+      - run: pnpm run test
